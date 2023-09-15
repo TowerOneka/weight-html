@@ -1,0 +1,19 @@
+@import './mixins';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  color: #feffff;
+
+  background-color: #2b7a78;
+
+  --screen-size: #{$baseScreenSize};
+
+  @include mobile {
+    --screen-size: #{$mobileScreenSize};
+  }
+}

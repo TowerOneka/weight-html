@@ -1,0 +1,66 @@
+@import '@/styles/mixins';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #3aafa9;
+
+  box-shadow: 0px 0px 35px 0px rgba(23, 37, 42, 0.47);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include mobile {
+    max-width: none;
+  }
+}
+
+.select {
+  margin-top: size(20);
+  border-color: #17252a;
+  border-radius: 20px;
+
+  padding: 10px;
+}
+
+.inputText {
+  margin-top: size(20);
+}
+
+.input {
+  margin-top: size(5);
+  border-color: #17252a;
+  border-radius: 20px;
+
+  padding: 10px;
+}
+
+.result {
+  margin-top: size(20);
+}
+
+.errorWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: size(20);
+  margin-top: size(20);
+}
+
+.button {
+  padding: size(10) size(20);
+  border-radius: 20px;
+  border: none;
+  background-color: #def2f1;
+  color: #17252a;
+  cursor: pointer;
+}
